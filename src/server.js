@@ -1,34 +1,41 @@
-import express from 'express';
-import path from 'path';
-import React from 'react';
-import { renderToString } from 'react-dom/server';
-import App from './App';
+import express from 'express'
+import path from 'path'
 
-const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
+import React from 'react'
+import {renderToString} from 'react-dom/server'
 
-const server = express();
+import App from './App'
+
+const assets = require(process.env.RAZZLE_ASSETS_MANIFEST)
+, server = express()
 
 server
-  .disable('x-powered-by')
-  .use(express.static(process.env.RAZZLE_PUBLIC_DIR))
-  .get('/*', (req, res) => {
-    const markup = renderToString(<App />);
-    res.send(
-      `<!doctype html>
-    <html lang="">
-    <head>
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta charSet='utf-8' />
-        <title>Welcome to Razzle</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        ${assets.client.css ? `<link rel="stylesheet" href="${assets.client.css}">` : ''}
-        <script src="${assets.client.js}" defer></script>
-    </head>
-    <body>
-        <div id="root">${markup}</div>
-    </body>
-</html>`
-    );
-  });
+	.disable('x-powered-by')
+	.use(express.static(process.env.RAZZLE_PUBLIC_DIR))
+	.get('/*', (request, response) => {
+		const markup = renderToString(<App />)
 
-export default server;
+		response.send(
+			`<!doctype html>
+			<html lang="en">
+				<head>
+						<title>Welcome to Razzle</title>
+
+						<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+						<meta http-equiv="X-UA-Compatible" content="IE=edge">
+						<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+						<meta name="description" content="">
+
+						${assets.client.css ? '<link rel="stylesheet" href="${assets.client.css}">' : ''}
+
+						<script async src="${assets.client.js}"></script>
+				</head>
+				<body>
+						<div id="root">${markup}</div>
+				</body>
+			</html>`
+		)
+	})
+
+export default server
