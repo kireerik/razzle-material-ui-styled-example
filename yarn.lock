@@ -3279,8 +3279,8 @@ range-parser@^1.0.3, range-parser@~1.2.0:
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.0.tgz#f49be6b487894ddc40dcc94a322f611092e00d5e"
 
 razzle@0.4.x:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/razzle/-/razzle-0.4.3.tgz#6c11356ef22de317a636ed088968fc8b5fffd026"
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/razzle/-/razzle-0.4.4.tgz#7b53b38e9de3eacc1b802091dcc435b69d91ce2b"
   dependencies:
     assets-webpack-plugin "^3.5.1"
     autoprefixer "^6.7.7"
@@ -3302,8 +3302,8 @@ razzle@0.4.x:
     start-server-webpack-plugin "^2.1.2"
     style-loader "^0.16.0"
     url-loader "^0.5.8"
-    webpack "^2.2.1"
-    webpack-dev-server "^2.4.1"
+    webpack "^2.5.1"
+    webpack-dev-server "^2.4.5"
     webpack-node-externals "^1.5.4"
 
 rc@^1.1.7:
@@ -4059,7 +4059,7 @@ webpack-dev-middleware@^1.10.2:
     path-is-absolute "^1.0.0"
     range-parser "^1.0.3"
 
-webpack-dev-server@^2.4.1:
+webpack-dev-server@^2.4.5:
   version "2.4.5"
   resolved "https://registry.yarnpkg.com/webpack-dev-server/-/webpack-dev-server-2.4.5.tgz#31384ce81136be1080b4b4cde0eb9b90e54ee6cf"
   dependencies:
@@ -4099,7 +4099,7 @@ webpack-sources@^0.2.3:
     source-list-map "^1.1.1"
     source-map "~0.5.3"
 
-webpack@^2.2.1:
+webpack@^2.5.1:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-2.5.1.tgz#61742f0cf8af555b87460a9cd8bba2f1e3ee2fce"
   dependencies:
