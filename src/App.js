@@ -5,18 +5,15 @@ import React, {Component} from 'react'
 import injectTapEventPlugin from 'react-tap-event-plugin'
 injectTapEventPlugin()
 
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import getMuiTheme from 'material-ui/styles/getMuiTheme'
+import {MuiThemeProvider, getMuiTheme} from 'material-ui/styles'
 const muiTheme = getMuiTheme({ // it's optional to pass an object
 	palette: {
 		accent1Color: deepOrange500
 	}
 })
 
-import RaisedButton from 'material-ui/RaisedButton'
-import Dialog from 'material-ui/Dialog'
+import {RaisedButton, Dialog, FlatButton} from 'material-ui'
 import {deepOrange500} from 'material-ui/styles/colors'
-import FlatButton from 'material-ui/FlatButton'
 
 const styles = {
 	container: {
