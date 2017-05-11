@@ -1,16 +1,17 @@
 {
 	"scripts": {
-		"start": "razzle build && cross-env NODE_ENV=production node build/server.js",
-		"dev": "razzle start"
-	},
-	"dependencies": {
-		"express": "4.x",
-		"html-minifier": "3.x",
-		"react": "16.0.0-alpha.3",
-		"react-dom": "16.0.0-alpha.3"
-	},
-	"devDependencies": {
-		"cross-env": "4.x",
-		"razzle": "0.4.x"
+		"start": "razzle build && cross-env NODE_ENV=production node build/server.js"
+		, "dev": "razzle start"
+	}
+	, "dependencies": {
+		"express": "4.x"
+		, "html-minifier": "3.x"
+
+		, "react": "16.0.0-alpha.12"
+		, "react-dom": "16.0.0-alpha.12"
+	}
+	, "devDependencies": {
+		"cross-env": "4.x"
+		, "razzle": "0.4.x"
 	}
 }
