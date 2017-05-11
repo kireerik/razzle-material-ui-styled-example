@@ -3347,9 +3347,9 @@ range-parser@^1.0.3, range-parser@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.0.tgz#f49be6b487894ddc40dcc94a322f611092e00d5e"
 
-razzle@0.4.x:
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/razzle/-/razzle-0.4.4.tgz#7b53b38e9de3eacc1b802091dcc435b69d91ce2b"
+razzle@0.5.x:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/razzle/-/razzle-0.5.2.tgz#efe9a3273f57c8e6032b52687fb5db68393d528b"
   dependencies:
     assets-webpack-plugin "^3.5.1"
     autoprefixer "^6.7.7"
