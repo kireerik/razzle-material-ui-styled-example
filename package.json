@@ -7,8 +7,11 @@
 		"express": "4.x"
 		, "html-minifier": "3.x"
 
-		, "react": "16.0.0-alpha.12"
-		, "react-dom": "16.0.0-alpha.12"
+		, "react": "15.x"
+		, "react-dom": "15.x"
+
+		, "material-ui": "0.x"
+		, "react-tap-event-plugin": "2.x"
 	}
 	, "devDependencies": {
 		"cross-env": "4.x"
