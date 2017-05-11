@@ -37,6 +37,7 @@ server
 			</html>`
 		, {
 			collapseWhitespace: true
+			, minifyCSS: true
 			, minifyJS: true
 		}))
 	})
