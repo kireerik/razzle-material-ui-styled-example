@@ -32,7 +32,7 @@ server
 					<script async src="` + assets.client.js + `"></script>
 				</head>
 				<body>
-					<div id="root">` + renderToString(<App />) + `</div>
+					<div id="root">` + renderToString(<App userAgent={request.headers['user-agent']} />) + `</div>
 				</body>
 			</html>`
 		, {

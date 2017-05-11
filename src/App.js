@@ -1,4 +1,4 @@
-// In this file, we create a React component which incorporates components provided by Material-UI.
+// In this file, we create a React component which contains components provided by Material-UI.
 import React, {Component} from 'react'
 
 // Needed for onTouchTap (http://stackoverflow.com/a/34015469/988941)
@@ -6,14 +6,9 @@ import injectTapEventPlugin from 'react-tap-event-plugin'
 injectTapEventPlugin()
 
 import {MuiThemeProvider, getMuiTheme} from 'material-ui/styles'
-const muiTheme = getMuiTheme({ // it's optional to pass an object
-	palette: {
-		accent1Color: deepOrange500
-	}
-})
+import {deepOrange500} from 'material-ui/styles/colors'
 
 import {RaisedButton, Dialog, FlatButton} from 'material-ui'
-import {deepOrange500} from 'material-ui/styles/colors'
 
 const styles = {
 	container: {
@@ -25,6 +20,13 @@ const styles = {
 class App extends Component {
 	constructor(properties, context) {
 		super(properties, context)
+
+		this.muiTheme = getMuiTheme({
+			palette: {
+				accent1Color: deepOrange500
+			}
+			, userAgent: properties.userAgent
+		})
 
 		this.state = {
 			open: false
@@ -43,13 +45,14 @@ class App extends Component {
 		})
 	}
 
+
 	render() {
 		const standardActions = (
 			<FlatButton label="Ok" primary={true} onTouchTap={this.handleRequestClose}/>
 		)
 
 		return (
-			<MuiThemeProvider muiTheme={muiTheme}>
+			<MuiThemeProvider muiTheme={this.muiTheme}>
 				<div style={styles.container}>
 					<h1>Material-UI</h1>
 					<h2>example project</h2>
