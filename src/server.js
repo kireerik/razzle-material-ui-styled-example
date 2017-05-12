@@ -1,4 +1,5 @@
 import express from 'express'
+import compression from 'compression'
 import {minify} from 'html-minifier'
 
 import React from 'react'
@@ -10,9 +11,9 @@ import App from './App'
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST)
 , server = express()
 
-
 server
 	.disable('x-powered-by')
+	.use(compression())
 	.use(express.static(process.env.RAZZLE_PUBLIC_DIR))
 	.get('/*', (request, response) => {
 		const sheet = new ServerStyleSheet()

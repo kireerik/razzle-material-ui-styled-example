@@ -5,6 +5,7 @@
 	}
 	, "dependencies": {
 		"express": "4.x"
+		, "compression": "1.x"
 		, "html-minifier": "3.x"
 
 		, "react": "15.x"
