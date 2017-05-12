@@ -1,20 +1,30 @@
-# Razzle Basic Example
+# Razzle Material UI Styled Example
 
-## How to use
-Download the example [or clone the whole project](https://github.com/jaredpalmer/razzle.git):
+## Getting Started
+* Initial steps
+	* Install [Node.js](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/en/docs/install).
+	* [Download](https://github.com/kireerik/razzle-material-ui-styled-example/archive/master.zip) or [clone](github-windows://openRepo/https://github.com/kireerik/razzle-material-ui-styled-example) this repository.
+	* Open a command prompt in the project folder.
 
-```bash
-curl https://codeload.github.com/jaredpalmer/razzle/tar.gz/master | tar -xz --strip=2 razzle-master/examples/basic
-cd basic
-```
-
-Install it and run:
-
-```bash
+Install dependencies:
+```shell
 yarn install
+```
+Start the server:
+```shell
 yarn start
+```
+This command initiates a build process and starts the server in production mode.
+
+Visit http://localhost/ to access the web application.
+
+### Development
+Start the server in development mode:
+```shell
+yarn dev
 ```
 
 ## Idea behind the example
-This is a basic, bare-bones example of how to use razzle. It satisfies the entry points
-`src/index.js` for the server and and `src/client.js` for the browser.
+This project is based on the [basic razzle example](https://github.com/jaredpalmer/razzle/tree/master/examples/basic). This repository also satisfies the following 2 entry points requred by Razzle:
+* `src/index.js` for the server
+* `src/client.js` for the browser
