@@ -9,6 +9,7 @@
 
 		, "react": "15.x"
 		, "react-dom": "15.x"
+		, "styled-components": "v2.0.0-17"
 
 		, "material-ui": "0.x"
 		, "react-tap-event-plugin": "2.x"

@@ -3,16 +3,22 @@ import {minify} from 'html-minifier'
 
 import React from 'react'
 import {renderToString} from 'react-dom/server'
+import {ServerStyleSheet} from 'styled-components'
 
 import App from './App'
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST)
 , server = express()
 
+
 server
 	.disable('x-powered-by')
 	.use(express.static(process.env.RAZZLE_PUBLIC_DIR))
 	.get('/*', (request, response) => {
+		const sheet = new ServerStyleSheet()
+		, html = renderToString(sheet.collectStyles(<App userAgent={request.headers['user-agent']} />))
+		, css = sheet.getStyleTags()
+
 		response.send(minify(
 			`<!DOCTYPE HTML>
 			<html lang="en">
@@ -27,12 +33,12 @@ server
 
 					` + (assets.client.css ?
 						'<link rel="stylesheet" href="' + assets.client.css + '">' : ''
-					) + `
+					) + css + `
 
 					<script async src="` + assets.client.js + `"></script>
 				</head>
 				<body>
-					<div id="root">` + renderToString(<App userAgent={request.headers['user-agent']} />) + `</div>
+					<div id="root">` + html + `</div>
 				</body>
 			</html>`
 		, {
