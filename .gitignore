@@ -1,9 +1,2 @@
-logs
-*.log
-npm-debug.log*
-.DS_Store
-
-coverage
-node_modules
 build
-public/static
+node_modules
