@@ -32,6 +32,8 @@ server
 
 					<meta name="description" content="">
 
+					<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500">
+
 					` + (assets.client.css ?
 						'<link rel="stylesheet" href="' + assets.client.css + '">' : ''
 					) + css + `
