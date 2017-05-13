@@ -1,16 +1,13 @@
 import express from 'express'
-import app from './server'
+import server from './server'
 
 if (module.hot) {
-	module.hot.accept('./server', () => {
-		console.log('HMR Reloading "./server":')
-	})
-
-	console.info('Server-side HMR Enabled.')
+	module.hot.accept('./server')
+	console.info('Server-side HMR Enabled.\n')
 }
 
 export default express()
-	.use((request, response) => app.handle(request, response))
+	.use((request, response) => server.handle(request, response))
 	.listen(process.env.PORT, (error) => {
 		if (error) {
 			console.error(error)
@@ -18,5 +15,5 @@ export default express()
 			return
 		}
 
-		console.log('> Server started on port ' + process.env.PORT)
+		console.log('Server started at ' + process.env.HOST + ':' + process.env.PORT + '\n')
 	})

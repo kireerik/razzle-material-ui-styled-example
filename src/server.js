@@ -6,7 +6,7 @@ import React from 'react'
 import {renderToString} from 'react-dom/server'
 import {ServerStyleSheet} from 'styled-components'
 
-import App from './App'
+import Application from './application/Main'
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST)
 , server = express()
@@ -17,14 +17,14 @@ server
 	.use(express.static(process.env.RAZZLE_PUBLIC_DIR))
 	.get('/*', (request, response) => {
 		const sheet = new ServerStyleSheet()
-		, html = renderToString(sheet.collectStyles(<App userAgent={request.headers['user-agent']} />))
+		, html = renderToString(sheet.collectStyles(<Application userAgent={request.headers['user-agent']} />))
 		, css = sheet.getStyleTags()
 
 		response.send(minify(
 			`<!DOCTYPE HTML>
 			<html lang="en">
 				<head>
-					<title>Welcome to Razzle</title>
+					<title>Material-UI Example</title>
 
 					<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 					<meta http-equiv="X-UA-Compatible" content="IE=edge">

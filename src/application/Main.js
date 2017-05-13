@@ -16,7 +16,7 @@ const Div = styled.div`
 	padding-top: 200;
 `
 
-class App extends Component {
+class Main extends Component {
 	constructor(properties, context) {
 		super(properties, context)
 
@@ -63,4 +63,4 @@ class App extends Component {
 	}
 }
 
-export default App
+export default Main
