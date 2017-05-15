@@ -19,7 +19,7 @@ injectGlobal`
 
 const Div = styled.div`
 	text-align: center;
-	padding-top: 200;
+	padding-top: 200px;
 `
 
 class Main extends Component {
