@@ -1,6 +1,6 @@
 // In this file, we create a React component which contains components provided by Material-UI.
 import React, {Component} from 'react'
-import styled from 'styled-components'
+import styled, {injectGlobal} from 'styled-components'
 
 // Needed for onTouchTap (http://stackoverflow.com/a/34015469/988941)
 import injectTapEventPlugin from 'react-tap-event-plugin'
@@ -10,6 +10,12 @@ import {MuiThemeProvider, getMuiTheme} from 'material-ui/styles'
 import {deepOrange500} from 'material-ui/styles/colors'
 
 import {RaisedButton, Dialog, FlatButton} from 'material-ui'
+
+injectGlobal`
+	h1, h2 {
+		font-family: 'Roboto', sans-serif;
+	}
+`
 
 const Div = styled.div`
 	text-align: center;
