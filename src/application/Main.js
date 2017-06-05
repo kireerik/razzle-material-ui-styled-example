@@ -38,35 +38,26 @@ class Main extends Component {
 		}
 	}
 
-	handleRequestClose = () => {
-		this.setState({
-			open: false
-		})
-	}
+	handleRequestClose = () => this.setState({
+		open: false
+	})
 
-	handleTouchTap = () => {
-		this.setState({
-			open: true
-		})
-	}
+	handleTouchTap = () => this.setState({
+		open: true
+	})
 
-	render() {
-		const standardActions = (
-			<FlatButton label="Ok" primary={true} onTouchTap={this.handleRequestClose} />
-		)
+	render = () =>
+		<MuiThemeProvider muiTheme={this.muiTheme}>
+			<Div>
+				<h1>Material-UI</h1>
+				<h2>example project</h2>
+				<RaisedButton label="Super Secret Password" secondary={true} onTouchTap={this.handleTouchTap} />
 
-		return (
-			<MuiThemeProvider muiTheme={this.muiTheme}>
-				<Div>
-					<h1>Material-UI</h1>
-					<h2>example project</h2>
-					<RaisedButton label="Super Secret Password" secondary={true} onTouchTap={this.handleTouchTap} />
-
-					<Dialog open={this.state.open} title="Super Secret Password" actions={standardActions} onRequestClose={this.handleRequestClose}>1-2-3-4-5</Dialog>
-				</Div>
-			</MuiThemeProvider>
-		)
-	}
+				<Dialog open={this.state.open} title="Super Secret Password" actions={
+					<FlatButton label="Ok" primary={true} onTouchTap={this.handleRequestClose} />
+				} onRequestClose={this.handleRequestClose}>1-2-3-4-5</Dialog>
+			</Div>
+		</MuiThemeProvider>
 }
 
 export default Main
