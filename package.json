@@ -6,17 +6,17 @@
 	, "dependencies": {
 		"express": "4.x"
 		, "compression": "1.x"
-		, "html-minifier": "3.x"
+		, "html-minifier": "3.4.4"
 
 		, "react": "15.x"
 		, "react-dom": "15.x"
-		, "styled-components": "v2.0.0-17"
+		, "styled-components": "2.x"
 
 		, "material-ui": "0.x"
 		, "react-tap-event-plugin": "2.x"
 	}
 	, "devDependencies": {
-		"cross-env": "4.x"
-		, "razzle": "0.5.x"
+		"cross-env": "5.x"
+		, "razzle": "0.6.x"
 	}
 }
