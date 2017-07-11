@@ -17,6 +17,6 @@
 	}
 	, "devDependencies": {
 		"cross-env": "5.x"
-		, "razzle": "0.6.x"
+		, "razzle": "0.7.x"
 	}
 }
