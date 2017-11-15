@@ -38,7 +38,7 @@ class Main extends Component {
 		open: false
 	})
 
-	handleTouchTap = () => this.setState({
+	handleClick = () => this.setState({
 		open: true
 	})
 
@@ -47,7 +47,7 @@ class Main extends Component {
 			<Div>
 				<h1>Material-UI</h1>
 				<h2>example project</h2>
-				<RaisedButton label="Super Secret Password" secondary={true} onClick={this.handleTouchTap} />
+				<RaisedButton label="Super Secret Password" secondary={true} onClick={this.handleClick} />
 
 				<Dialog open={this.state.open} title="Super Secret Password" actions={
 					<FlatButton label="Ok" primary={true} onClick={this.handleRequestClose} />
