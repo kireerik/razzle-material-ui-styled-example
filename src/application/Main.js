@@ -2,10 +2,6 @@
 import React, {Component} from 'react'
 import styled, {injectGlobal} from 'styled-components'
 
-// Needed for onTouchTap (http://stackoverflow.com/a/34015469/988941)
-import injectTapEventPlugin from 'react-tap-event-plugin'
-injectTapEventPlugin()
-
 import {MuiThemeProvider, getMuiTheme} from 'material-ui/styles'
 import {deepOrange500} from 'material-ui/styles/colors'
 
@@ -51,10 +47,10 @@ class Main extends Component {
 			<Div>
 				<h1>Material-UI</h1>
 				<h2>example project</h2>
-				<RaisedButton label="Super Secret Password" secondary={true} onTouchTap={this.handleTouchTap} />
+				<RaisedButton label="Super Secret Password" secondary={true} onClick={this.handleTouchTap} />
 
 				<Dialog open={this.state.open} title="Super Secret Password" actions={
-					<FlatButton label="Ok" primary={true} onTouchTap={this.handleRequestClose} />
+					<FlatButton label="Ok" primary={true} onClick={this.handleRequestClose} />
 				} onRequestClose={this.handleRequestClose}>1-2-3-4-5</Dialog>
 			</Div>
 		</MuiThemeProvider>

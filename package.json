@@ -13,7 +13,6 @@
 		, "styled-components": "2.x"
 
 		, "material-ui": "0.x"
-		, "react-tap-event-plugin": "2.x"
 	}
 	, "devDependencies": {
 		"cross-env": "5.x"
