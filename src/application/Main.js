@@ -18,7 +18,7 @@ const Div = styled.div`
 	padding-top: 200px;
 `
 
-class Main extends Component {
+export default class Main extends Component {
 	constructor(properties, context) {
 		super(properties, context)
 
@@ -55,5 +55,3 @@ class Main extends Component {
 			</Div>
 		</MuiThemeProvider>
 }
-
-export default Main

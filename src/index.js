@@ -8,7 +8,7 @@ if (module.hot) {
 
 export default express()
 	.use((request, response) => server.handle(request, response))
-	.listen(process.env.PORT, (error) => {
+	.listen(process.env.PORT, error => {
 		if (error) {
 			console.error(error)
 

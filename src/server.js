@@ -9,9 +9,8 @@ import {ServerStyleSheet} from 'styled-components'
 import Application from './application/Main'
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST)
-, server = express()
 
-server
+export default express()
 	.disable('x-powered-by')
 	.use(compression())
 	.use(express.static(process.env.RAZZLE_PUBLIC_DIR))
@@ -50,5 +49,3 @@ server
 			, minifyJS: true
 		}))
 	})
-
-export default server
