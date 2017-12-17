@@ -45,6 +45,7 @@ export default express()
 			</html>`
 		, {
 			collapseWhitespace: true
+			, removeComments: true
 			, minifyCSS: true
 			, minifyJS: true
 		}))
