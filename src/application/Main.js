@@ -19,8 +19,8 @@ const Div = styled.div`
 `
 
 export default class Main extends Component {
-	constructor(properties, context) {
-		super(properties, context)
+	constructor(properties) {
+		super(properties)
 
 		this.muiTheme = getMuiTheme({
 			palette: {
