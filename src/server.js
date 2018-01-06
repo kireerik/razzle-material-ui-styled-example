@@ -10,6 +10,17 @@ import Application from './application/Main'
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST)
 
+// Workaround for Razzle's assets route issue in terms of static site genearation
+var clientCss = assets.client.css
+, clientJs = assets.client.js
+
+if (process.env.NODE_ENV == 'production') {
+	if (clientCss)
+		clientCss = clientCss.replace('/', '')
+
+	clientJs = clientJs.replace('/', '')
+}
+
 export default express()
 	.disable('x-powered-by')
 	.use(compression())
@@ -31,13 +42,13 @@ export default express()
 
 					<meta name="description" content="">
 
-					<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500">
+					<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
 
-					` + (assets.client.css ?
-						'<link rel="stylesheet" href="' + assets.client.css + '">' : ''
+					` + (clientCss ?
+						'<link rel="stylesheet" href="' + clientCss + '">' : ''
 					) + css + `
 
-					<script async src="` + assets.client.js + `"></script>
+					<script defer src="` + clientJs + `"></script>
 				</head>
 				<body>
 					<div id="root">` + html + `</div>

@@ -2,6 +2,8 @@
 	"scripts": {
 		"start": "razzle build && cross-env NODE_ENV=production node build/server.js"
 		, "dev": "razzle start"
+
+		, "static": "cross-env RAZZLE_STATIC=true razzle build && cross-env NODE_ENV=production node build/server.js"
 	}
 	, "dependencies": {
 		"express": "4.x"
