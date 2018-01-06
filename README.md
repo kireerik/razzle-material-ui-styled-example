@@ -24,6 +24,7 @@
 	- **S**erver **S**ide **R**endering
 	- **H**ot **M**odule **R**eplacement for both client and server side <a title="React" href="https://facebook.github.io/react/"><img alt="React" src="https://cdn.worldvectorlogo.com/logos/react.svg" width="" height="18"></a>[React](https://facebook.github.io/react/) components
 	- Up to date JavaScript ([**E**CMA](https://en.wikipedia.org/wiki/Ecma_International)**S**cript 6 (2015)) support
+	- Single route static site generation
 - <a title="Express" href="https://expressjs.com/"><img alt="Express" src="https://cdn.worldvectorlogo.com/logos/express-109.svg" width="" height="18"></a> server with gzip [compression](https://github.com/expressjs/compression)
 	- HTML and inline CSS and JS minification with [HTMLMinifier](https://github.com/kangax/html-minifier)
 	- <a title="Styled Components" href="https://www.styled-components.com/"><img alt="Styled Components" src="https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png" width="18" height="18"></a> [Styled Components](https://www.styled-components.com/)
@@ -53,6 +54,13 @@ Start the server in development mode:
 ```shell
 yarn dev
 ```
+
+### Single route static site generation
+Generate a static site:
+```shell
+yarn static
+```
+Open the `index.html` within the `static` folder to access the web application. The folder name can be modified with the `RAZZLE_STATIC_PATH` environment variable.
 
 ## Idea behind the example
 This project is based on the [basic razzle example](https://github.com/jaredpalmer/razzle/tree/master/examples/basic). This repository also satisfies the following 2 entry points requred by Razzle:
