@@ -13,7 +13,6 @@
 	&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<a title="Material UI" href="http://www.material-ui.com/#/"><img alt="Material UI" src="https://cdn.worldvectorlogo.com/logos/material-ui.svg" width="295.417" height="240"></a>
 </p>
 
-
 <p align="center">
 	<br><a title="Sibbell" href="https://about.sibbell.com/"><img alt="Sibbell" src="https://raw.githubusercontent.com/sibbell/support/master/logo.png" width="131" height="41"></a>
 	<br>⭐ Star and get notified about new releases via email.
