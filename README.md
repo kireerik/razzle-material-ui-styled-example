@@ -1,4 +1,4 @@
-<h1 align="center">Razzle Material UI Styled Example</h1>
+<h1 align="center">Razzle Material-UI Styled Example</h1>
 
 <p align="center">
 	<a title="Node.js" href="https://nodejs.org/en/"><img alt="Node.js" src="https://camo.githubusercontent.com/9c24355bb3afbff914503b663ade7beb341079fa/68747470733a2f2f6e6f64656a732e6f72672f7374617469632f696d616765732f6c6f676f2d6c696768742e737667" width="104.49" height="64"></a>
@@ -10,7 +10,7 @@
 <p align="center">
 	<a title="React" href="https://facebook.github.io/react/"><img alt="React" src="https://cdn.worldvectorlogo.com/logos/react.svg" width="267.135" height="240"></a>
 	&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<a title="Styled Components" href="https://www.styled-components.com/"><img alt="Styled Components" src="https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png" width="240" height="240"></a>
-	&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<a title="Material UI" href="http://www.material-ui.com/#/"><img alt="Material UI" src="https://cdn.worldvectorlogo.com/logos/material-ui.svg" width="295.417" height="240"></a>
+	&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<a title="Material-UI" href="http://www.material-ui.com/#/"><img alt="Material-UI" src="https://cdn.worldvectorlogo.com/logos/material-ui.svg" width="295.417" height="240"></a>
 </p>
 
 <p align="center">
@@ -27,7 +27,7 @@
 - <a title="Express" href="https://expressjs.com/"><img alt="Express" src="https://cdn.worldvectorlogo.com/logos/express-109.svg" width="" height="18"></a> server with gzip [compression](https://github.com/expressjs/compression)
 	- HTML and inline CSS and JS minification with [HTMLMinifier](https://github.com/kangax/html-minifier)
 	- <a title="Styled Components" href="https://www.styled-components.com/"><img alt="Styled Components" src="https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png" width="18" height="18"></a> [Styled Components](https://www.styled-components.com/)
-	- <a title="Material UI" href="http://www.material-ui.com/#/"><img alt="Material UI" src="https://cdn.worldvectorlogo.com/logos/material-ui.svg" width="" height="18"></a> [Material UI](http://www.material-ui.com/#/)
+	- <a title="Material-UI" href="http://www.material-ui.com/#/"><img alt="Material-UI" src="https://cdn.worldvectorlogo.com/logos/material-ui.svg" width="" height="18"></a> [Material-UI](http://www.material-ui.com/#/)
 
 ## Getting Started
 - Initial steps
