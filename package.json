@@ -12,7 +12,7 @@
 
 		, "react": "16.x"
 		, "react-dom": "16.x"
-		, "styled-components": "3.x"
+		, "styled-components": "3.2.0-1"
 
 		, "material-ui": "0.x"
 	}
