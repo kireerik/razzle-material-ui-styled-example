@@ -1,0 +1,13 @@
+{
+	"extends": "react-app"
+	, "rules": {
+		"no-undef": 1
+		, "eqeqeq": 0
+		, "no-mixed-operators": 0
+		, "no-extend-native": 0
+
+		, "react/no-direct-mutation-state": 0
+
+		, "no-useless-concat": 0
+	}
+}
