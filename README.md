@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-	<br><a title="Sibbell" href="https://about.sibbell.com/"><img alt="Sibbell" src="https://raw.githubusercontent.com/sibbell/support/master/logo.png" width="131" height="41"></a>
+	<br><a title="CodeRelease.io" href="https://coderelease.io/">CodeRelease.io</a>
 	<br>⭐ Star and get notified about new releases via email.
 </p>
 
