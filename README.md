@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-	<br><a title="GitPunch" href="https://gitpunch.com/"><img alt="GitPunch" src="https://raw.githubusercontent.com/vfeskov/gitpunch/master/client/public/big-logo.png" width="222" height="52"></a>
+	<br><a title="GitPunch" href="https://gitpunch.com/"><img alt="GitPunch" src="https://raw.githubusercontent.com/vfeskov/gitpunch/master/client/src/big-logo.png" width="222" height="52"></a>
 	<br>⭐ Star and get notified about new releases via email.
 </p>
 
