@@ -8,7 +8,7 @@
 	, "dependencies": {
 		"express": "4.x"
 		, "compression": "1.x"
-		, "html-minifier": "3.x"
+		, "html-minifier": "4.0.0"
 
 		, "react": "16.x"
 		, "react-dom": "16.x"
