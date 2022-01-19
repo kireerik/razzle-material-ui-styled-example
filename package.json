@@ -10,9 +10,9 @@
 		, "compression": "1.x"
 		, "html-minifier": "3.x"
 
-		, "react": "16.x"
-		, "react-dom": "16.x"
-		, "styled-components": "3.x"
+		, "react": "16.5.0"
+		, "react-dom": "16.5.0"
+		, "styled-components": "4.0.0"
 
 		, "material-ui": "0.x"
 	}
