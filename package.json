@@ -14,7 +14,7 @@
 		, "react-dom": "16.x"
 		, "styled-components": "3.x"
 
-		, "material-ui": "0.x"
+		, "material-ui": "0.20.2"
 	}
 	, "devDependencies": {
 		"cross-env": "5.x"
