@@ -6,7 +6,7 @@
 		, "static": "cross-env RAZZLE_STATIC=true razzle build && cross-env NODE_ENV=production node build/server.js"
 	}
 	, "dependencies": {
-		"express": "4.x"
+		"express": "4.19.2"
 		, "compression": "1.x"
 		, "html-minifier": "3.x"
 
