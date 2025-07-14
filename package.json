@@ -8,13 +8,13 @@
 	, "dependencies": {
 		"express": "4.x"
 		, "compression": "1.x"
-		, "html-minifier": "3.x"
+		, "html-minifier": "4.0.0"
 
 		, "react": "16.x"
 		, "react-dom": "16.x"
 		, "styled-components": "3.x"
 
-		, "material-ui": "0.x"
+		, "material-ui": "0.20.2"
 	}
 	, "devDependencies": {
 		"cross-env": "5.x"
